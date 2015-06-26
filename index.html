@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- link to javascript file -->
 
     <title>Tic Tac Toe</title>
   </head>
   <body>
+    
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
@@ -24,6 +26,20 @@
         </div>
       </div>
       <div class="row">
+    
+
+
+<!--     <div class="container">
+      <div class="row text-center">
+        <div id="players">
+        <div id="X" class="">Player X</div>
+        <div id="O" class="">Player O</div>
+       <input type="button" class="button" value="New Game">
+        </div>
+      </div>  
+    </div>
+
+ -->
 
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
@@ -32,24 +48,36 @@
           <!-- you can put rows inside of columns! -->
           <!-- our board has 3 rows, each with 3 columns inside -->
           <div class="row">
-            <div class="col-xs-4 box"></div>
-            <div class="col-xs-4 box"></div>
-            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box" id="sqr1">
+            </div> 
+            <div class="col-xs-4 box" id="sqr2">
+            </div>
+            <div class="col-xs-4 box" id="sqr3">
+            </div>
           </div>
 
           <div class="row">
-            <div class="col-xs-4 box"></div>
-            <div class="col-xs-4 box"></div>
-            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box" id="sqr4">
+            </div>
+            <div class="col-xs-4 box" id="sqr5">
+            </div>
+            <div class="col-xs-4 box" id="sqr6">
+            </div>
           </div>
 
           <div class="row">
-            <div class="col-xs-4 box"></div>
-            <div class="col-xs-4 box"></div>
-            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box" id="sqr7">
+            </div>
+            <div class="col-xs-4 box" id="sqr8">
+            </div>
+            <div class="col-xs-4 box" id="sqr9">
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+<script src="ticTacToe.js"></script>
+    
   </body>
 </html>
