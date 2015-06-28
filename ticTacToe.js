@@ -313,16 +313,21 @@ function checkVictory() {
 
 function draw() {
     alert('It is a draw!');
-    reset();
 }
+
 function victory() {
     alert('X wins!');
-    reset();
 }
+
 function defeat() {
     alert("O wins!");
-    reset();
 }
+
+
+var Refresh = document.getElementById("NewGame")
+Refresh.addEventListener("click", function(event) {
+    reset ()
+});    
 
 function reset() {
                 s1 = 0;
@@ -346,6 +351,8 @@ function reset() {
                 count = 0;
 
 }
+
+
 
 });
 
