@@ -6,11 +6,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 var x = "x"
 var o = "o"
-var count = 0;
-var o_win = 0;
-var x_win = 0;
-
-
 
 var s1 = 0;
 var s2 = 0;
@@ -259,52 +254,52 @@ sqr9Click.addEventListener("click", function(event) {
 
 function checkVictory() {
     if(s1 == "X" && s2 == "X" && s3 == "X") {
-        victory();
+        Xvictory();
     }
     if(s1 == "X" && s5 == "X" && s9 == "X") {
-        victory();
+        Xvictory();
     }
     if(s3 == "X" && s5 == "X" && s7 == "X") {
-        victory();
+        Xvictory();
     }
     if(s4 == "X" && s5 == "X" && s6 == "X") {
-        victory();
+        Xvictory();
     }
     if(s7 == "X" && s8 == "X" && s9 == "X") {
-        victory();
+        Xvictory();
     }
     if(s1 == "X" && s4 == "X" && s7 == "X") {
-        victory();
+        Xvictory();
     }
     if(s2 == "X" && s5 == "X" && s8 == "X") {
-        victory();
+        Xvictory();
     }
     if(s3 == "X" && s6 == "X" && s9 == "X") {
-        victory();
+        Xvictory();
     }
     if(s1 == "O" && s2 == "O" && s3 == "O") {
-        defeat();
+        Ovictory();
     }
     if(s1 == "O" && s5 == "O" && s9 == "O") {
-        victory();
+        Ovictory();
     }
     if(s3 == "O" && s5 == "O" && s7 == "O") {
-        defeat();
+        Ovictory();
     }
     if(s4 == "O" && s5 == "O" && s6 == "O") {
-        defeat();
+        Ovictory();
     }
     if(s7 == "O" && s8 == "O" && s9 == "O") {
-        defeat();
+        Ovictory();
     }
     if(s1 == "O" && s4 == "O" && s7 == "O") {
-        defeat();
+        Ovictory();
     }
     if(s2 == "O" && s5 == "O" && s8 == "O") {
-        defeat();
+        Ovictory();
     }
     if(s3 == "O" && s6 == "O" && s9 == "O") {
-        defeat();
+        Ovictory();
     }
     if(count == 9) {
         draw();
@@ -315,11 +310,11 @@ function draw() {
     alert('It is a draw!');
 }
 
-function victory() {
+function Xvictory() {
     alert('X wins!');
 }
 
-function defeat() {
+function Ovictory() {
     alert("O wins!");
 }
 
@@ -356,7 +351,6 @@ function reset() {
 
 });
 
-//notes
 
 
           
